@@ -1,4 +1,5 @@
 <?php
+
 namespace ApacheLogIterator;
 
 /**
@@ -17,10 +18,13 @@ namespace ApacheLogIterator;
  *
  * @author: Simon Champion <simon.champion@connectionservices.com>
  * @author: Radu Topala <radu.topala@trisoft.ro>
+ *
  * @copyright Connection Services Limited (http://www.connectionservices.com), 2012
+ *
  * @version 1.0 / 17-Aug-2012
  */
-class ApacheLogFields {
+class ApacheLogFields
+{
     /**
      * @var string Regular expression to extract relevant data from an Apache log record.
      */
@@ -30,7 +34,7 @@ class ApacheLogFields {
     /**
      * @var array Defines the index position of each field in the regex matches array. (
      */
-    public $fieldArray = array(
+    public $fieldArray = [
         'originalLogEntry', //element zero is the full returned string.
         'localServer',
         'host',
@@ -43,5 +47,5 @@ class ApacheLogFields {
         'bytes',
         'referrer',
         'userAgent',
-    );
+    ];
 }
